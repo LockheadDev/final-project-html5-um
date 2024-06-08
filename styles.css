@@ -23,10 +23,11 @@ h1 {
 
 nav {
   background: linear-gradient(45deg, #1e88e5, #42a5f5);
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin-bottom: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -34,26 +35,33 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 nav ul li:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #1e88e5;
+  color: #ffffff;
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
-  background-color: white;
-
+  background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  nav ul li {
+    margin-bottom: 5px;
+  }
+}
+
+
 
 a {
   color: #FFEA00;
@@ -96,6 +104,8 @@ img {
   padding: 10px;
   background-color: #555;
   border-radius: 8px;
+  width: 100%;
+  height: auto;
 }
 
 footer {
